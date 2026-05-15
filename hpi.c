@@ -235,6 +235,7 @@ static IPlatform p = {
     .MousePos = Win32MousePos,
     .MouseLeft = Win32LeftMouseButton,
     .MouseRight = Win32RightMouseButton,
+    .GetDelta = Win32GetDeltaTime,
 };
 
 IPlatform *HPI_Create(const unsigned short *title, int w, int h, int bFullscreen)
