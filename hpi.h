@@ -23,5 +23,7 @@ typedef struct HPI {
     void (*MousePos)(int* x, int* y);
     int (*MouseLeft)();
     int (*MouseRight)();
+
+    float (*GetDelta)();
 } IPlatform;
 IPlatform* HPI_Create(const unsigned short* title, int w, int h, int bFullscreen);
